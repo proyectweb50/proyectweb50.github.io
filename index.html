@@ -47,6 +47,20 @@
        </p>
       <p>
       </p>
+           <script>
+            const auth =firebase.auth();
+            const provider = new firebase.auth.GoogleAuthProvider();
+            provider.setCustomParameters({prompt: "select_account"});
+            auth.onAuthStateChanged(
+              usuarioAuth =>{
+                  if (usuarioAuth && usuarioAuth.email){
+                      email.value=usuarioAuth.email;
+                  }
+                  else {
+                      auth.singInWithRedirect(provider);
+                      
+                  }
+              } 
       
     </form>
     <footer>

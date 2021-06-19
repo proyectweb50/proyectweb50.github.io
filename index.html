@@ -36,11 +36,12 @@
     <script>
             const auth = firebase.auth();
            
-             const provider = new firebase.auth.GoogleAuthProvider();
+      const provider = new firebase.auth.GoogleAuthProvider();      
+      
+            provider.setCustomParameters({ prompt: "select_account" });
             
-             provider.setCustomParameters({ prompt: "select_account" });
             
-             auth.onAuthStateChanged(
+auth.onAuthStateChanged(
              
                usuarioAuth =>{
                   if (usuarioAuth && usuarioAuth.email) {
@@ -53,7 +54,7 @@
                   
                   }
                   else {
-                      auth.singInWithRedirect(provider);
+                     await auth.singInWithRedirect(provider);
                       
                   }
               } ,

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Potencia de un Numero</title>
+    <title>THE PILL</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -13,31 +13,33 @@
   </head>
   <body>
     <header>
-      <h1>Potencia de un Numero</h1>
+      <h1>THE PILL</h1>
     </header>
     <form id="potencia" action="javascript:;">
       <p><em></em></p>
       <p>
         <label accesskey="N">
-          Potencia<br>
+          Usuario<br>
           <input id="entradapotencia" name="potencia" type="text" autofocus pattern=".{1,30}"
                  required maxlength="30" size="33"
-                 placeholder="ingresa el numero">
+                 placeholder="">
         </label>
-        <br><output id="salidaresultado"></output>
-      </p>
+           <p><em></em></p>
       <p>
-        <input type="submit" value="Generar" onclick="javascript:generar();">
+          <label accesskey="m">
+          contraseña<br>
+          <input id="entradacontraseña" name="potencia" type="text" autofocus pattern=".{1,30}"
+                 required maxlength="30" size="33"
+                 placeholder="">
+        </label>
+             <p><em></em></p>
+      <p>  
+                    
+          <input type="submit" value="sign in" onclick="javascript:ingresar();">
+       
       
-        <input type="button" value="limpiar" onclick="javascript:eraseText();"> 
-    
        </p>
       <p>
-       <label accesskey="V">
-          <br>
-          <textarea id='salidaresultado' name="salidaPotencia" rows="5" cols="30"
-                    placeholder="Resultado"></textarea>
-        </label>
       </p>
       
     </form>

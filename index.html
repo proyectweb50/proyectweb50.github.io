@@ -4,13 +4,7 @@
     <title>THE PILL</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      html {font-family: sans-serif; text-align: center}
-      body {display: inline-block; text-align: left}
-      *:required {border: thin solid blue}
-      footer {font-size: small}
-    </style>
-     <!-- carga el nucleo de firebase JS SDK -->
+    <!-- carga el nucleo de firebase JS SDK -->
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app-js"></script>
 <!--Agrega el manejo de autentificacion-->
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
@@ -21,30 +15,7 @@
     <header>
       <h1>THE PILL</h1>
     </header>
-    <form id="autentificacion" action="javascript:;">
-      <p><em></em></p>
-      <p>
-        <label accesskey="N">
-          Usuario<br>
-          <input id="entradausuario" name="potencia" type="text" autofocus pattern=".{1,30}"
-                 required maxlength="30" size="33"
-                 placeholder="">
-        </label>
-           <p><em></em></p>
-      <p>
-          <label accesskey="m">
-          contraseña<br>
-          <input id="entradacontraseña" name="potencia" type="text" autofocus pattern=".{1,30}"
-                 required maxlength="30" size="33"
-                 placeholder="">
-        </label>
-             <p><em></em></p>
-      <p>  
-                    
-          <input type="submit" value="sign in" onclick="javascript:ingresar();">
-       
-    
-           <script>
+             <script>
              
             const auth = firebase.auth();
            

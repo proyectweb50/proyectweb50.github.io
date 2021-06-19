@@ -1,0 +1,27 @@
+"use strict";
+
+var 
+    potencia = document.getElementById("entradapotencia"),
+            
+    salidaPotencia = document.getElementById("salidaPotencia");
+    
+    
+function generar(){
+  var numero = parseInt(potencia["entradapotencia"].value),
+      resultado=numero**numero;    
+     
+      
+    
+    salidaPotencia = document.getElementById("salidaPotencia");
+  
+  
+      resultado=(numero)(numero);
+    salidaPotencia.value = resultado;
+   }
+   
+
+
+function eraseText() {
+    document.getElementById("salidaresultado").value = "";
+     document.getElementById("entradapotencia").value = "";
+}

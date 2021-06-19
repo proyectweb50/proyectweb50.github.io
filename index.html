@@ -60,7 +60,14 @@
                       auth.singInWithRedirect(provider);
                       
                   }
-              } 
+              } ,
+              procesaError);
+             asyc fution terminaSesion(){
+               try{
+                 await auth.signOut();
+               }catch (e){procesarError(e);
+                         }
+             }
       
     </form>
     <footer>

@@ -15,22 +15,16 @@
 
     <script src="js/init.js"></script>
 
-  </head>
-  <body>
-    <header>
-      <h1>THE PILL</h1>
-    </header>
-   
-    <form action="ejemplo.php" method="get">
-  <p>Usuario: <input type="text" name="nombre" size="40"></p>
-  <p>Contraseña: <input type="number" name="nacido" min="1900"></p>
-  
-  <p>
-    <input type="submit" value="acceder">
-    <input type="submit" value="Registrar">
-  </p>
-</form>
-    
+  <fieldset>         
+    <leged> Email </leged>
+    <output id="email"><progres max="100" >cargando..</progress></output>
+    </fieldset>
+    <fieldset>
+      <legend> Nombre </legend>
+      <output> id="nombre"</output>
+      </dieldset>
+    <figure> <img id="avatar" alt="Avatar"></figure>
+    <Button type="button" onclick="terminaSesion()">Terminar Sesion</button>
     <script>
             const auth = firebase.auth();
            
